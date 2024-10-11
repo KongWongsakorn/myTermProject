@@ -1,0 +1,98 @@
+/* Container for Classroom Tabs and Content */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.class-container {
+  width: 100%;
+  max-width: 1300px;
+  background-color: rgba(255, 255, 255, 0.1); /* พื้นหลังโปร่งแสง */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 50px auto;
+  backdrop-filter: blur(20px); /* ทำให้พื้นหลังเบลอ */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* เพิ่มขอบ */
+}
+
+
+/* Classroom Tabs */
+.classroom-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab-link {
+  position: relative;
+}
+
+.tab-link button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-link button:hover {
+  background-color: #0056b3;
+}
+
+.tab-link button.active {
+  background-color: #0056b3;
+}
+
+.tab-link .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 100%;
+  z-index: 1;
+}
+
+.tab-link .dropdown button {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  color: black; /* Added to change text color */
+}
+
+.tab-link .dropdown button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Classroom Content */
+.tab-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

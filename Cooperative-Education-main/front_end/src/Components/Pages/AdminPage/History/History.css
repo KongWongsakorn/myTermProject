@@ -1,0 +1,58 @@
+.history-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px); /* ทำให้พื้นหลังเบลอ */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 100%; /* ปรับตามความกว้างที่ต้องการ */
+    max-width: 1200px; /* สามารถกำหนดขนาดสูงสุดได้ */
+    margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
+}
+
+.history-container h1, .history-container h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.history-container .button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0px;
+    margin-top: 20px;
+}
+
+.history-container .history-bth {
+    width: 200px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1); /* พื้นหลังโปร่งแสง */
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px); /* ทำให้ปุ่มเบลอ */
+    color: #fff;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.history-container .history-bth:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+

@@ -1,0 +1,75 @@
+/* Styles for the question card and options */
+.question-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.options {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option-label input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right: 10px; /* Adjust as needed */
+    position: relative; /* Ensure relative positioning */
+}
+
+/* Styles for navigation buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 15px 30px; /* Increase padding for a larger button */
+    border: none;
+    border-radius: 30px; /* Increase border radius for more rounded corners */
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 16px; /* Adjust font size if needed */
+}
+
+/* General button hover style */
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Specific styles for the back button */
+.back-button {
+    background-color: #f44336; /* Red background */
+    color: white;
+    padding: 15px 30px; /* Increase padding for a larger button */
+    border-radius: 25px; /* More rounded corners */
+    font-size: 16px; /* Increase font size */
+    max-width: 150px; /* Adjust the width */
+    width: 100%; /* Ensure it adjusts to parent container */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    transition: 0.3s ease;
+}
+
+/* Hover effect for the back button */
+.back-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+    opacity: 0.9; /* Add hover effect */
+}
+
