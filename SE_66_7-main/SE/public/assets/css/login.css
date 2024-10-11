@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: stretch; 
+    height: 100vh; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0;  
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    position: relative; 
+    background-image: url('../images/greenBG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px; 
+}
+.contentContainer {
+    text-align: center; 
+    max-width: 100%; 
+    padding: 20px;
+    
+}
+.logoContainer {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    padding: 10px; 
+}
+
+.logo {
+    height: 50px; 
+    width: auto; 
+}
+.leftContainer h1 {
+    color: white;
+    font-weight: bold;
+    margin-button: 10;
+}
+.leftContainer h4 {
+    color: white;
+    font-weight: bold;
+    margin-button: 2;
+}
+.leftContainer p {
+    color: white;
+    margin: 0;
+}
+.leftContainer hr{
+    width: 50%; 
+    border-color: white; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.rightContainer
+{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    width: 50%; 
+    flex: 1; 
+    background-color:white;
+}
+.login-header {
+    text-align: center; 
+    padding-top: 50px; 
+    margin-bottom: 30px; 
+}
+
+.login-form {
+    width: 400px; 
+    margin: 0 auto; 
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.login-form h1 {
+    color: green;
+}
+.form-group {
+    margin-bottom: 15px; 
+}
+.rightContainer p{
+    color: #b3afaf;
+    
+}
+label {
+    font-weight: bold; 
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 80%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.btn-primary {
+    width: 100%; 
+    padding: 12px; 
+    background-color: #007bff; 
+    border: none; 
+    border-radius: 40px; 
+    color: #fff; 
+    cursor: pointer; 
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+}

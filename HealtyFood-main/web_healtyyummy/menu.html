@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link เชื่อมไฟล์css-->
+    <link rel="stylesheet" href="stylemenu.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+    
+    <title>Main Page</title>
+    
+    <!--Boxicon-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-first-aid' ></i>
+                <div class="logo_name">Healthy Yummy</div>
+            </div>
+                <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user-account'></i>
+                <span class="link_name">User</span>
+                </a>
+                    <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="/Chatlive.html">
+                    <i class='bx bx-conversation' ></i>
+                    <span class="link_name">Live Chat</span>
+                </a>
+                <span class="tooltip">Live Chat</span>
+            </li>
+            <li>
+                <a href="/menu.html">
+                    <i class='bx bxs-food-menu' ></i>
+                    <span class="link_name">Menu Reccommend</span>
+                </a>
+                <span class="tooltip">Menu</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-business' ></i>
+                    <span class="link_name">About Us</span>
+                </a>
+                <span class="tooltip">About Us</span>
+            </li>
+        </li>
+        </ul>
+        <a href="/index.html">
+        <div class="logout_content">
+            <div class="logout">
+                <div class="logout_details">
+                    <div class="text">LOG OUT</div>
+                </div>  
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    </a>
+        <div class="container">
+            <div class="search_box">
+                <i class='bx bx-search-alt'></i>
+                    <input type="text" id="search" placeholder="Search...">
+                </div>
+                <div class="menu">
+                    <span class="mo">
+                        Menu Reccommend
+                    </span>
+                
+                    <!--รูปเมนู-->
+                    <div class="images">
+                        <div class="images_box" name="ไข่ข้นลูกชิ้นอกไก่">
+                            <a href="/main_page/food/food1.html">
+                            <img src="/main_page/images/menu1.jpg" alt="ไข่ข้นลูกชิ้นอกไก่"></a>
+                        </div>
+                        <div class="images_box" name="เครปไข่ดาวอกไก่">
+                            <a href="/main_page/food/food2.html">
+                            <img src="/main_page/images/menu2.jpg" alt="เครปไข่ดาวอกไก่"></a>
+                        </div>
+                        <div class="images_box" name="ไข่เจียวกิมจิ">
+                            <a href="/main_page/food/food3.html">
+                            <img src="/main_page/images/menu3.jpg" alt="ไข่เจียวกิมจิ"></a>
+                        </div>
+                        <div class="images_box" name="กุ้งย่างกระเทียม">
+                            <a href="/main_page/food/food4.html">
+                            <img src="/main_page/images/menu4.jpg" alt="กุ้งย่างกระเทียม"></a>
+                        </div>
+                        <div class="images_box" name="ไข่เจียวกุ้งไร้น้ำมัน">
+                            <a href="/main_page/food/food5.html">
+                            <img src="/main_page/images/menu5.jpg" alt="ไข่เจียวกุ้งไร้น้ำมัน"></a>
+                        </div>
+                        <div class="images_box" name="ขนมปังไข่คน">
+                            <a href="/main_page/food/food6.html">
+                            <img src="/main_page/images/menu6.jpg" alt="ขนมปังไข่คน"></a>
+                        </div>
+                        <div class="images_box" name="ขนมปังไข่คน">
+                            <a href="/main_page/food/food7.html">
+                            <img src="/main_page/images/menu7.jpg" alt="ไข่ดาวไร้น้ำมัน"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post_content">
+                    <span class="post">
+                        Lasted Post
+                    </span>
+                    <!--รูปบทความ-->
+                    <div class="post_details">
+                            <div class="post_box">
+                                <a href="/main_page/lasted_post/post1.html">
+                                <img src="/main_page/images/post1.jpg">
+                        </div>
+                            <div class="post_box">
+                                <a href="/main_page/lasted_post/post2.html">
+                                <img src="/main_page/images/post2.jpg">
+                        </div>
+                            <div class="post_box">
+                                <a href="/main_page/lasted_post/post3.html">
+                                <img src="/main_page/images/post3.jpg">
+                        </div>
+                            <div class="post_box">
+                                <a href="/main_page/lasted_post/post4.html">
+                                <img src="/main_page/images/post4.jpg">
+                        </div>
+                            <div class="post_box">
+                            <a href="/main_page/lasted_post/post5.html">
+                            <img src="/main_page/images/post5.jpg">
+                        </div>
+                            <div class="post_box">
+                            <a href="/main_page/lasted_post/post6.html">
+                            <img src="/main_page/images/post6.png">
+                        </div>
+                </div>
+            </div>
+            </div>
+        <script>
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+
+            btn.onclick = function(){
+                sidebar.classList.toggle("active");
+            }
+        </script>
+        <!--link เชื่อมไฟล์ javascript-->
+        <script src="scriptmenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link เชื่อมไฟล์css-->
+    <link rel="stylesheet" href="menu.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+    
+    <title>Main Page</title>
+    
+    <!--Boxicon-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-first-aid' ></i>
+                <div class="logo_name">Healthy Yummy</div>
+            </div>
+                <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user-account'></i>
+                <span class="link_name">User</span>
+                </a>
+                    <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="live_chat.html">
+                    <i class='bx bx-conversation' ></i>
+                    <span class="link_name">Live Chat</span>
+                </a>
+                <span class="tooltip">Live Chat</span>
+            </li>
+            <li>
+                <a href="menu.html">
+                    <i class='bx bxs-food-menu' ></i>
+                    <span class="link_name">Menu Reccommend</span>
+                </a>
+                <span class="tooltip">Menu</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-business' ></i>
+                    <span class="link_name">About Us</span>
+                </a>
+                <span class="tooltip">About Us</span>
+            </li>
+        </li>
+        </ul>
+        <div class="logout_content">
+            <a href="#">
+                <div class="logout">
+                    <div class="logout_details">
+                        <div class="text">LOG OUT</div>
+                    </div>  
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+        
+        <div class="container">
+            <div class="search_box">
+                <i class='bx bx-search-alt'></i>
+                    <input type="text" id="search" placeholder="Search...">
+                </div>
+                <div class="menu">
+                    <span class="mo">
+                        Menu Reccommend
+                    </span>
+                
+                    <!--รูปเมนู-->
+                    <div class="images">
+                        <div class="images_box" name="ไข่ข้นลูกชิ้นอกไก่">
+                            <a href="food/food1.html">
+                            <img src="images/menu1.jpg" alt="menu"></a>
+                        </div>
+                        <div class="images_box" name="เครปไข่ดาวอกไก่">
+                            <a href="food/food2.html">
+                            <img src="images/menu2.jpg" alt="menu"></a>
+                        </div>
+                        <div class="images_box" name="ไข่เจียวกิมจิ">
+                            <a href="food/food3.html">
+                            <img src="images/menu3.jpg" alt="menu"></a>
+                        </div>
+                        <div class="images_box" name="กุ้งย่างกระเทียม">
+                            <a href="food/food4.html">
+                            <img src="images/menu4.jpg" alt="menu"></a>
+                        </div>
+                        <div class="images_box" name="ไข่เจียวกุ้งไร้น้ำมัน">
+                            <a href="food/food5.html">
+                            <img src="images/menu5.jpg" alt="menu"></a>
+                        </div>
+                        <div class="images_box" name="ขนมปังไข่คน">
+                            <a href="food/food6.html">
+                            <img src="images/menu6.jpg" alt="menu"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post_content">
+                    <span class="post">
+                        Lasted Post
+                    </span>
+                    <!--รูปบทความ-->
+                    <div class="post_details">
+                            <div class="post_box">
+                                <a href="/lasted_post/post1.html">
+                                <img src="https://thegirlonbloor.com/wp-content/uploads/2019/05/Clean-Eating-Meal-Prep-2-790x1285.jpg">
+                        </div>
+                            <div class="post_box">
+                                <a href="/lasted_post/post2.html">
+                                <img src="https://cleanfoodcrush.com/wp-content/uploads/2019/08/Back-to-School-Lunch-Ideas-CFC.jpg">
+                        </div>
+                            <div class="post_box">
+                                <a href="/lasted_post/post3.html">
+                                <img src="https://adiligentheart.com/wp-content/uploads/2018/10/Pin-80-Simple-Family-Friendly-Lunch-Ideas-2-1.png">
+                        </div>
+                            <div class="post_box">
+                                <a href="/lasted_post/post4.html">
+                                <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-04/24/10/enhanced/webdr08/enhanced-4439-1429884395-3.jpg">
+                        </div>
+                            <!--<div class="post_box">
+                            <img src="https://i.pinimg.com/originals/3f/59/c8/3f59c8ba74a66f437d4756bc64c47c3d.jpg">
+                        </div>
+                            <div class="post_box">
+                            <img src="https://d37aln7voll6p.cloudfront.net/wp-content/uploads/2017/04/14-clean-eating-meal-prep-ideas-683x1024.jpg">
+                        </div>
+                         <div class="post_box">
+                                <a href="https://www.buzzfeed.com/christinebyrne/clean-eating-2015">
+                            <div class="post_box">
+                            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-04/30/18/enhanced/webdr04/original-2569-1430431898-3.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto">
+                        </div>
+                            <div class="post_box">
+                            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-04/27/11/enhanced/webdr04/original-15996-1430147825-19.jpg?downsize=600:*&output-format=auto&output-quality=auto">
+                        </div>-->
+                </div>
+            </div>
+            </div>
+        <script>
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+
+            btn.onclick = function(){
+                sidebar.classList.toggle("active");
+            }
+        </script>
+        <!--link เชื่อมไฟล์ javascript-->
+        <script src="menu.js"></script>
+</body>
+</html>

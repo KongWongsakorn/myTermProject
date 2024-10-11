@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js
+        "></script>
+        <link rel="stylesheet" href="complete.css">
+
+        <title>Welcome to Healthy Yummy</title>
+    </head>
+    <body>
+        <!--Login-->
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <span class="title">Sign in to continue</span>
+
+                    <form action="#">
+                        <b>email:</b>
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your username" id="emailField" required>
+                        </div>
+
+                        <b>password:</b>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Enter your password" id="passwordField" required>
+                        </div>
+
+                        <div class="input-field button">
+                            <input type="button" id="Logbtn" value="Login">
+                        </div>
+                    </form>
+
+                    <div class="login-register">
+                        <span class="text">Don't have an account?
+                        <a href="#" class="text register-link">Register</a></span>
+                    </div>
+                </div>
+
+        <!--Register-->
+        <div class="form register">
+            <span class="title">Register</span>
+
+            <form action="#">
+                <b>username:</b>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your username" id="usernameFieldR" required>
+                </div>
+
+                <b>email:</b>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your email" id="emailFieldR" required>
+                </div>
+
+                <b>password:</b>
+                <div class="input-field">
+                    <input type="password" class="password" placeholder="Create a password" id="passwordFieldR" required>
+                </div>
+                
+                <b>repeat password:</b>
+                <div class="input-field">
+                    <input type="password" class="password" placeholder="Confirm a password" id="passwordFieldRG" required>
+                </div>
+
+                <div class="input-field button">
+                    <input type="button" id="Regbtn" value="Register">
+                </div>
+
+                <div class="login-register">
+                    <span class="text">Have already an account?
+                    <a href="#" class="text login-link">Login Here</a></span>
+                </div>
+            </form>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+        <script src="config.js"></script> <!--Config-->
+        <script src="register.js"></script> <!--ไฟล์ register-->
+        <script src="login.js"></script> <!--ไฟล์ login-->
+        <script src="tran.js"></script> <!--ไฟล์สลับหน้าระหว่าง register กับ login-->
+    </body>
+</html>

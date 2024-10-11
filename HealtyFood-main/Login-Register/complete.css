@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9efe3;
+}
+/*มายากล*/
+.container{
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    background: #f2d5cb;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 353px;
+    width: 200%;
+    transition: height 0.2 ease;
+}
+/*ไม่รู้ลืมละ น่าจะทั้งสองขยับ*/
+.container .form{
+    width: 50%;
+    padding: 20px;
+    background-color:#f2d5cb;
+    transition: margin-left 0.18s ease;
+}
+/*กดlogin here แล้วจะเคลื่อนกลับมา*/
+.container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+/*registerขยับ*/
+.container .register{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+/*เหมือนข้างล่างแต่เป็นของregister*/
+.container.active .register{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+/*ต้องกดแล้วมันจะขยับไปอีกหน้านึง*/
+.container.active .forms{
+    height: 404px;
+}
+/*ขนาดตัวอักษร title*/
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+/*จัดโครงสร้างที่กรอกข้อมูล*/
+.form .input-field{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-top: 0px;
+}
+/*ในช่องกรอกข้อมูล ex user pass*/
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.2s ease;
+}
+/*ตอนกำลังจะใส่ข้อมูลช่องจะมีขีดสำดำข้างล่างขึ้น*/
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #000000;
+}
+/*spanปกติ*/
+.form .text{
+    color:#000000;
+    font-size: 14px;
+}
+/*spanกดเพื่อไปยังลิ้งใหม่*/
+.form a.text{
+    color:#a50c0c;
+    font-size: 14px;
+}
+
+.form a.text{
+    text-decoration: none;
+}
+/*ลิ้งตอนเคอร์เซอร์เม้าชี้จะมีเส้นข้างล่าง*/
+.form a:hover{
+    text-decoration: underline;
+}
+/*ขนาดปุ่มlogin*/
+.form .button{
+    margin-top: 20px;
+}
+/*เม้าชี้*/
+.form .button input{
+    border: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    border-radius: 20px;
+    background-color:#f5ede6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/*ปุ่มเปลี่ยนสี*/
+.button input:hover{
+    background-color:#ccc2c0;
+}
+
+.form .login-register{
+    margin-top: 20px;
+    text-align: center;
+}

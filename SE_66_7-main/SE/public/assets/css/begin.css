@@ -1,0 +1,10 @@
+.begin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+    background-image: url('../images/newhome1.png');
+    background-size: cover; /* ปรับขนาดรูปภาพให้ครอบคลุมพื้นที่ content */
+    background-position: center;
+}

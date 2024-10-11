@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9efe3;
+}
+.box_chat{
+    background-color: #f5ede6;
+    width: 400px;
+    height: 600px;
+    margin: center;
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    border-radius: 20px;
+}
+.top{
+    display :flex;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    background-color: #f2d5cb;
+    padding: 10px;
+    border-radius: 8px;
+}
+.top .h1{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+.top button{
+    font-size: 27px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: none;  
+}
+.input_box{
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #ccc2c0;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+.input_box input{
+    font-size: 16px;
+    height:60%;
+    width :80%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #ccc;
+}
+.input_box input:is(:focus, :valid){
+    border-bottom-color: #000000;
+}
+.input_box button{
+    margin: 5px;
+    height :60%;
+    width: 15%;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: #291f1d;
+  }
+.box_messages{
+    width: 400px;
+    height: 480px;
+    padding: 20px;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.messages{
+    background-color: #fdfda0;
+    border-radius: 8px;
+}
+.messages .span{
+    text-align: center;
+}
+.msg_me{
+    background-color: #f0b67a;
+    width:max-content;
+    padding:10px;
+    border-radius:5px 0 5px 5px;
+    max-width: 50%;
+    transition: all 0.2s ease;
+}
+.msg_user{
+    background-color: #afcbc0;
+    width:max-content;
+    padding:10px;
+    border-radius:5px 0 5px 5px;
+    max-width: 50%;
+    transition: all 0.2s ease;
+}
+a{
+    margin-Left:50%;
+    align-items: right;
+}
+.msg_megod{
+    background-color:#945b00;
+    width:max-content;
+    padding:10px;
+    border-radius:5px 0 5px 5px;
+    max-width: 50%;
+    transition: all 0.2s ease;
+}
+.msg_usergod{
+    background-color: rgb(0, 137, 71);
+    width:max-content;
+    padding:10px;
+    border-radius:5px 0 5px 5px;
+    max-width: 50%;
+    transition: all 0.2s ease;
+}

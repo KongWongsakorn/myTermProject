@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylechat.css">
+        <title>Chat</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js
+    "></script>
+ </head>
+
+    
+ <body>
+  
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <script src="config.js"></script>
+    <script src="Chatlive.js"></script>
+    
+    <div class="container">
+        <div class="box_chat">
+            <div class="top">
+                <h1>Chat </h1>
+                <a><button onclick="back()">กลับหน้าหลัก</button></a>
+            </div>
+             
+            <div class="box_messages"id="box_messages">
+               <div class="messages">
+                   <p>นักโภชนาการ(Nutrain)ข้อความกล่องสีเหลืองเท่านั้น</p>
+               </div>
+            </div>
+
+            <div class="input_box">
+                <input id="msg_text"type="text" placeholder="พิพม์ข้อความ">
+                <button onclick="send()">ส่ง</button>
+                <button onclick="like()">ส่งใจ</button>
+                
+
+            </div>
+        </div>
+    </div>
+ </body>
+</html>
